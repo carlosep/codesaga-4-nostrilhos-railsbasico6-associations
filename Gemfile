@@ -7,3 +7,4 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
+gem 'capybara', group: :test
