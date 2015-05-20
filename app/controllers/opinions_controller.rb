@@ -1,3 +1,5 @@
+# OptionsController
+#
 class OpinionsController < ApplicationController
   def new
     @opinion = Opinion.new
