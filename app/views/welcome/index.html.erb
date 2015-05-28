@@ -1,1 +1,4 @@
 <h1>Bem vindo a Thinking App</h1>
+<% @opinions.each do |opinion| %>
+  <p><%= opinion.body %></p>
+<% end %>
