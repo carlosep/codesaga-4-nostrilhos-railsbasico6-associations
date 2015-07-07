@@ -3,6 +3,8 @@
 <% @opinions.each do |opinion| %>
   <div class='opinion'>
     <p><%= opinion.body %></p>
+    <span><%= pluralize(opinion.agrees.count, 'person') %> agree</span>
+    <%= button_to 'I agree!', opinion_agrees_path(opinion)  %>
   </div>
 <% end %>
 </div>
