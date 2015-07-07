@@ -1,4 +1,4 @@
-# OptionsController
+# OpinionsController
 #
 class OpinionsController < ApplicationController
   def new

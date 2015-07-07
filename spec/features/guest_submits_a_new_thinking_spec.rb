@@ -6,7 +6,7 @@ feature 'Guest submits a new thinking' do
 
     fill_in 'Body', with: 'Rails is awesome!'
 
-    click_on 'Create an option'
+    click_on 'Create an opinion'
 
     expect(page).to have_content('Rails is awesome!')
   end

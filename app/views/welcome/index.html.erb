@@ -1,4 +1,8 @@
 <h1>Bem vindo a Thinking App</h1>
+<div id='opinions'>
 <% @opinions.each do |opinion| %>
-  <p><%= opinion.body %></p>
+  <div class='opinion'>
+    <p><%= opinion.body %></p>
+  </div>
 <% end %>
+</div>
