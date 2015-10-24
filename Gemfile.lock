@@ -126,3 +126,7 @@ DEPENDENCIES
   rails (= 4.2.0)
   rspec-rails
   sqlite3
+  tzinfo-data
+
+BUNDLED WITH
+   1.10.5
