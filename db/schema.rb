@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150428030546) do
+ActiveRecord::Schema.define(version: 20151121185631) do
+
+  create_table "agrees", force: :cascade do |t|
+    t.integer  "opinion_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "agrees", ["opinion_id"], name: "index_agrees_on_opinion_id"
 
   create_table "opinions", force: :cascade do |t|
     t.string "body"
